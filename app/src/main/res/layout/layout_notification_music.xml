@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageViewSong"
+        android:src="@drawable/ic_music"
+        android:layout_width="35dp"
+        android:layout_height="35dp"/>
+    <TextView
+        android:ellipsize="end"
+        android:maxWidth="250dp"
+        android:maxLines="1"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/imageViewSong"
+        android:textSize="20sp"
+        android:text="Chiều thu họa bóng nàng"
+        android:id="@+id/textViewNotificationTitleSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:scaleType="fitXY"
+        android:layout_toLeftOf="@id/imageClose"
+        android:src="@drawable/ic_pause_black"
+        android:id="@+id/imagePlayOrPause"
+        android:layout_width="35dp"
+        android:layout_height="35dp"/>
+    <ImageView
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_close_black"
+        android:id="@+id/imageClose"
+        android:layout_width="35dp"
+        android:layout_height="35dp"/>
+</RelativeLayout>
